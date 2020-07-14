@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/backquiz"
+    android:paddingLeft="16dp"
+    android:orientation="vertical"
+    tools:context=".QuizProgActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:text="Score"
+
+            android:textColor="#000"
+            android:textSize="30sp"
+
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            app:srcCompat="@drawable/ic_user"/>
+
+        <TextView
+            android:id="@+id/core"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_money"
+
+            android:text="0"
+            android:textColor="#000"
+            android:textSize="30sp"
+
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:gravity="center"
+        android:text="1.What is my favorite song?"
+        android:textColor="#ffff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/choice1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/taba"
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+
+
+        />
+
+    <Button
+        android:id="@+id/choice2"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/taba"
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@drawable/taba"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/choice3"
+
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@drawable/taba"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/choice4"
+
+
+        />
+
+    <Button
+        android:id="@+id/high"
+        android:layout_width="80dp"
+
+        android:layout_height="30dp"
+
+        android:layout_gravity="center"
+        android:background="@drawable/taba"
+        android:text="My Score" />
+
+
+
+</LinearLayout>

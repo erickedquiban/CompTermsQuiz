@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="280dp"
+    android:layout_height="400dp"
+    android:background="#66000000"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    tools:context=".popoupss">
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="end"
+        android:background="#ff3300"
+        android:gravity="center"
+        android:text="Close"
+        android:textColor="#ffebe6"
+        android:textStyle="bold"
+        tools:text="X" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idbtn"
+        android:onClick="btnClick"
+        android:text="Share Link on Fb"
+        android:gravity="center"/>
+
+</LinearLayout>

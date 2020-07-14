@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/compfrag"
+    tools:context=".HighscoreActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_marginTop="150dp"
+        android:textSize="45dp"
+        android:fontFamily="serif-monospace"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="Your Score:" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/textScore"
+        android:textSize="20dp"
+        android:id="@+id/alert"
+        android:text="alert"
+        android:gravity="center"
+        android:layout_height="30dp"/>
+
+    <!--<TextView
+        android:id="@+id/textHighScore"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textScore"
+        android:layout_marginTop="37dp"
+        android:gravity="center"
+        android:text="Top Score:"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:textStyle="bold" />-->
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/back"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+       android:background="@drawable/taba"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:text="Try Again"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_below="@+id/textScore"/>
+
+    <Button
+        android:id="@+id/level2"
+        android:layout_width="150dp"
+        android:textColor="#000000"
+        android:background="@drawable/taba"
+        android:enabled="false"
+        android:layout_centerInParent="true"
+        android:text="Lesson 2"
+        android:layout_below="@+id/back"
+        android:layout_height="50dp"/>
+   <!-- <ToggleButton
+        android:id="@+id/btn1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/back"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/taba"
+        android:fontFamily="serif-monospace"
+        android:text="Next Level"
+        android:checked="true"
+        android:textColor="#000000"
+        android:textOff="Next Level"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:text="Next Level" />-->
+
+
+</RelativeLayout>
+
+</ScrollView>

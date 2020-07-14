@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:background="@drawable/compfrag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="638dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="276dp"
+            app:srcCompat="@drawable/internetexplorer" />
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="201dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/imageView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="#008080"
+            android:enabled="false"
+            android:fadingEdge="horizontal|vertical"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:text="Introduction to internet,
+           What is the internet? The internet is a global information network that connects millions of computers. It is growing exponentially and provides a unique information resource that is global, diverse and current.
+Internet in the 1950’s
+The internet has no single inventor. Instead, it has evolved over time.
+The internet got its start in United States more than 50 years ago as a government weapon in the Cold War.
+Internet in the 1960’s
+In 1962, a scientist from M.I.T and DARPA named J.C.R. Licklider proposed a (galactic network) of computers that could talk to one another. Such a network would enable government leaders to communicate even if the Soviets destroyed the telephone system.
+In 1965, another M.I.T. scientist developed a way of sending information form one computer to another that he called (packet switching). Packet switching breaks data down into blocks ,or packets, before sending it to its destination.
+Without packet switching, the government’s computer network-now known as the ARPANET- would have been just a vulnerable to enemy attacks as the phone system.
+In 1969, ARPANET delivered its first message: a node-to-node communication from one computer to another but it crashed the full network. The internet was yet to be born.
+Internet in the 1970’s
+By the end of 1969, just four computers were connected to the ARPANET, but the network grew steadily during the 1970’s.
+ As packet-switched computer networks multiplied, however, it becomes more difficult for them to integrate into a single worldwide (internet).
+By the end of 1970’s, a computer scientist named Vinton Cerf had begun to solve this problem by developing a way for all of the computers on all of the world’s mini-networks to communicate with one another.
+He called his invention (Transmission Control Protocol), or TCP. (Later, he added an additional protocol, known as (Internet Protocol).
+Internet in the 1980’s
+Cerf’s protocol transformed the internet into a worldwide network. Throughout the 1980s, researchers and scientists used it to send files and data from one computer to another.
+
+Internet in the 1990’s
+However, in 1991 the internet changed again.
+ Tim Berners-Lee introduced the World Wide Web: an Internet the was not simply a way to send files from one place to another but was itself a “web” of information that anyone on the internet could retrieve.
+Berners-Lee created the first browser and the internet that we know today.
+"
+
+
+
+            android:textColorLink="@android:color/black"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/editText"
+            android:orientation="horizontal"
+            android:background="@drawable/taba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:id="@+id/bntlayout"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnSpeak"
+                    android:background="@drawable/playme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn1"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Play"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnStop"
+                    android:background="@drawable/stopme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn3"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Stop"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:textSize="25dp"
+
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Internet"
+            android:textColor="#000000" />
+        <!--TITLE-->
+        <TextView
+            android:id="@+id/kahatext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            android:text="What is internet?"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <!--For image of case-->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="401dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/kahatext"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/taba" />
+
+        <TextView
+            android:id="@+id/kahadef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imageView3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="The internet is a global information network that connects millions of computers. It is growing exponentially and provides a unique information resource that is global, diverse and current."
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+        <!--Google Code Jam-->
+        <TextView
+            android:id="@+id/monitortext"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/kahadef"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:textSize="25dp"
+            android:text="What do we use the Internet for? "
+            android:textColor="#000000" />
+        <!--monitor image-->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/monitortext"
+            app:srcCompat="@drawable/taba" />
+
+
+        <TextView
+            android:id="@+id/monitodef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Browsing information \nSocial media and creating awareness \nFor entertainment (music, videos, movies) \nCommunicating with people all over the world \nSharing information \nE-commerce and Banking "
+            android:fontFamily="serif-monospace"
+            android:maxLines="10"
+            android:layout_below="@+id/imageView4"
+            />
+
+        <!--TopCoder-->
+        <TextView
+            android:id="@+id/keytext"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/monitodef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Internet in the 1950’s "
+            android:textColor="#000000" />
+        <!--image of keyboard-->
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/keytext"
+            app:srcCompat="@drawable/taba" />
+
+
+        <TextView
+            android:id="@+id/keydef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:layout_below="@id/imageView5"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:maxLines="30"
+            android:text="The internet has no single “inventor.” Instead, it has evolved over time. \nThe internet got its start in United States more than 50 years ago as a government weapon in the Cold War. \nScientists and researchers used it to communicate and share data with one another through what was known as DARPNET (Defense’s Advanced Research Projects Agency Network). \nThis was in reponse to the Solviet Union Bombings and a need to create a communication network which was free from interference and disruption. "
+            android:fontFamily="serif-monospace"/>
+
+
+        <!--Internet in the 1960’s -->
+
+        <TextView
+            android:id="@+id/mousetext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/keydef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Internet in the 1960’s "
+            android:textColor="#000000"/>
+
+
+        <!--Coderbyte image-->
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/mousetext"
+            app:srcCompat="@drawable/cyderbyte" />
+
+
+        <TextView
+            android:id="@+id/mousedef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:maxLines="30"
+            android:text="In 1962, a scientist from M.I.T and DARPA named J.C.R. Licklider proposed a (galactic network) of computers that could talk to one another. Such a network would enable government leaders to communicate even if the Soviets destroyed the telephone system. \nIn 1965, another M.I.T. scientist developed a way of sending information form one computer to another that he called (packet switching). Packet switching breaks data down into blocks ,or packets, before sending it to its destination. \nWithout packet switching, the government’s computer network-now known as the ARPANET- would have been just a vulnerable to enemy attacks as the phone system. \nIn 1969, ARPANET delivered its first message: a “node-to-node” communication from one computer to another but it crashed the full network. The internet was yet to be born."
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView6"/>
+
+
+        <!--Internet in the 1970’s -->
+        <TextView
+            android:id="@+id/mother"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mousedef"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Internet in the 1970’s  "
+            android:textColor="#000000"/>
+        <!--SQL Zoo  image-->
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/mother"
+            app:srcCompat="@drawable/taba" />
+        <!--SQL Zoo  Def-->
+        <TextView
+            android:id="@+id/motherdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:maxLines="30"
+            android:text="By the end of 1969, just four computers were connected to the ARPANET, but the network grew steadily during the 1970’s. \n As packet-switched computer networks multiplied, however, it becomes more difficult for them to integrate into a single worldwide (internet). \nBy the end of 1970’s, a computer scientist named Vinton Cerf had begun to solve this problem by developing a way for all of the computers on all of the world’s mini-networks to communicate with one another \nHe called his invention (Transmission Control Protocol), or TCP. (Later, he added an additional protocol, known as (Internet Protocol). The acronym we use to refer to these today is TCP/IP.) \nTCP/IP was described to be the (handshake) between computers all over the world. It enabled each computer to have its own identity. "
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView7"
+            android:textColor="#000000"/>
+
+
+
+
+
+        <!--Internet in the 1980’s -->
+        <TextView
+            android:id="@+id/ram"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/motherdef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Internet in the 1980’s "
+            android:textColor="#000000"/>
+        <!--Codecademy image-->
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/ram"
+            app:srcCompat="@drawable/taba" />
+
+
+        <TextView
+            android:id="@+id/ramdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:maxLines="10"
+            android:text="Cerf’s protocol transformed the internet into a worldwide network. Throughout the 1980s, researchers and scientists used it to send files and data from one computer to another. \nHowever, this network was still between scientists and researchers from different universities and labs. "
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView8"
+            android:textColor="#000000"/>
+
+
+        <!--Internet in the 1990’s -->
+        <TextView
+            android:id="@+id/battery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ramdef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Internet in the 1990’s "
+            android:textColor="#000000"
+            />
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/battery"
+            app:srcCompat="@drawable/taba" />
+        <TextView
+            android:id="@+id/batef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:maxLines="20"
+            android:text="However, in 1991 the internet changed again. \n Tim Berners-Lee introduced the World Wide Web: an Internet the was not simply a way to send files from one place to another but was itself a “web” of information that anyone on the internet could retrieve. \nBerners-Lee created the first browser and the internet that we know today. \nIn 1992, a group of students and researchers at the University of Illinois developed a sophisticated browser that they called Mosaic. (It later became Netscape) ."
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView14"
+            android:textColor="#000000"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/batef">
+
+            <Button
+                android:id="@+id/quiz1"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/greenbutton"
+                android:text="I want to take a Quiz"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="25dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+

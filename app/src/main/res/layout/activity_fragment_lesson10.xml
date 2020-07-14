@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:background="@drawable/compfrag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="638dp">
+
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="276dp"
+            app:srcCompat="@drawable/internetexplorer" />
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="201dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/imageView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:background="#008080"
+            android:enabled="false"
+            android:fadingEdge="horizontal|vertical"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:text="Website's that help your Programming Skills,
+            Stack overflow,Stack Overflow is a question and answer site for professional and enthusiast programmers. It is a privately held website, the flagship site of the Stack Exchange Network, created in 2008 by Jeff Atwood and Joel Spolsky. It features questions and answers on a wide range of topics in computer programming
+            Google Code Jam, Google Code Jam is an international programming competition hosted and administered by Google.
+            TopCoder,Topcoder is a crowdsourcing company with an open global community of designers, developers, data scientists, and competitive programmers.
+            Coderbyte,Coderbyte is a web application built to help you practice programming and improve your coding skills. We offer a collection of code challenges and web development courses that can help you prepare for an upcoming job interview or coding bootcamp.
+            SQL Zoo ,is a free,(learn-by-doing) SQL course that has you punching out queries and wracking your brain for the solutions from the very beginning.
+            Codecademy,Codecademy is an online interactive platform that offers free coding classes in 12 different programming languages including Python, Java, JavaScript, Ruby, SQL, C++, and Sass, as well as markup languages HTML and CSS
+            Coursera,Coursera is an American online learning platform founded by Stanford professors Andrew Ng and Daphne Koller that offers massive open online courses, specializations, and degrees.
+            Scratch,Scratch is a block-based visual programming language and online community targeted primarily at children. Users of the site can create online projects using a block-like interface.
+
+"
+
+
+
+            android:textColorLink="@android:color/black"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/editText"
+            android:orientation="horizontal"
+            android:background="@drawable/taba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:id="@+id/bntlayout"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnSpeak"
+                    android:background="@drawable/playme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn1"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Play"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnStop"
+                    android:background="@drawable/stopme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn3"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Stop"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+          android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:textSize="25dp"
+
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Website's that help your Programming Skills"
+            android:textColor="#000000" />
+        <!--TITLE-->
+        <TextView
+            android:id="@+id/kahatext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            android:text="Stack overflow"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <!--For image of case-->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="401dp"
+            android:layout_height="138dp"
+            android:layout_below="@+id/kahatext"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/stackov" />
+
+        <TextView
+            android:id="@+id/kahadef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imageView3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Stack Overflow is a question and answer site for professional and enthusiast programmers. It is a privately held website, the flagship site of the Stack Exchange Network, created in 2008 by Jeff Atwood and Joel Spolsky. It features questions and answers on a wide range of topics in computer programming"
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+        <!--Google Code Jam-->
+        <TextView
+            android:id="@+id/monitortext"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/kahadef"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:textSize="25dp"
+            android:text="Google Code Jam"
+            android:textColor="#000000" />
+        <!--monitor image-->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/monitortext"
+            app:srcCompat="@drawable/googlecodejam" />
+
+
+        <TextView
+            android:id="@+id/monitodef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Google Code Jam is an international programming competition hosted and administered by Google. The competition began in 2003. The competition consists of a set of algorithmic problems which must be solved in a fixed amount of time"
+            android:layout_below="@+id/imageView4"
+/>
+
+        <!--TopCoder-->
+        <TextView
+            android:id="@+id/keytext"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/monitodef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="TopCoder"
+            android:textColor="#000000" />
+        <!--image of keyboard-->
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/keytext"
+            app:srcCompat="@drawable/topcoder" />
+
+
+        <TextView
+            android:id="@+id/keydef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:layout_below="@id/imageView5"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Topcoder is a crowdsourcing company with an open global community of designers, developers, data scientists, and competitive programmers. Topcoder pays community members for their work on the projects and sells community services to corporate, mid-size, and small-business clients."/>
+
+
+        <!--Coderbyte-->
+
+        <TextView
+            android:id="@+id/mousetext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/keydef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Coderbyte"
+            android:textColor="#000000"/>
+
+
+        <!--Coderbyte image-->
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/mousetext"
+            app:srcCompat="@drawable/cyderbyte" />
+
+
+        <TextView
+            android:id="@+id/mousedef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Coderbyte is a web application built to help you practice programming and improve your coding skills. We offer a collection of code challenges and web development courses that can help you prepare for an upcoming job interview or coding bootcamp."
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView6"/>
+
+
+        <!--SQL Zoo-->
+        <TextView
+            android:id="@+id/mother"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mousedef"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="SQL Zoo "
+            android:textColor="#000000"/>
+        <!--SQL Zoo  image-->
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/mother"
+            app:srcCompat="@drawable/sqlzoo" />
+        <!--SQL Zoo  Def-->
+        <TextView
+            android:id="@+id/motherdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="SQLZoo is a free,(learn-by-doing) SQL course that has you punching out queries and wracking your brain for the solutions from the very beginning. "
+        android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView7"
+            android:textColor="#000000"/>
+
+
+
+
+
+        <!--Codecademy-->
+        <TextView
+            android:id="@+id/ram"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/motherdef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Codecademy"
+            android:textColor="#000000"/>
+        <!--Codecademy image-->
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/ram"
+            app:srcCompat="@drawable/codeacademy" />
+
+
+        <TextView
+            android:id="@+id/ramdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView8"
+            android:textColor="#000000"
+            android:text="Codecademy is an online interactive platform that offers free coding classes in 12 different programming languages including Python, Java, JavaScript, Ruby, SQL, C++, and Sass, as well as markup languages HTML and CSS"/>
+
+
+
+        <!--Coursera-->
+        <TextView
+            android:id="@+id/battery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ramdef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Coursera"
+            android:textColor="#000000"
+            />
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/battery"
+            app:srcCompat="@drawable/coursera" />
+        <TextView
+            android:id="@+id/batef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView14"
+            android:textColor="#000000"
+           android:text="Coursera is an American online learning platform founded by Stanford professors Andrew Ng and Daphne Koller that offers massive open online courses, specializations, and degrees." />
+
+
+
+        <!-- Scratch-->
+
+
+        <TextView
+            android:id="@+id/compavr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/batef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Scratch"
+            android:textColor="#000000"/>
+        <!--image of AVR-->
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/compavr"
+            app:srcCompat="@drawable/scratch4" />
+        <TextView
+            android:id="@+id/avref"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView10"
+            android:text="Scratch is a block-based visual programming language and online community targeted primarily at children. Users of the site can create online projects using a block-like interface. The service is developed by the MIT Media Lab, has been translated into 70+ languages, and is used in most parts of the world."
+            android:textColor="#000000"
+/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/avref"
+            >
+
+            <Button
+                android:id="@+id/quiz1"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/greenbutton"
+                android:text="I want to take a Quiz"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="25dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+

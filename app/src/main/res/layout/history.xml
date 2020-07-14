@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:background="@drawable/compfrag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="638dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/historyofcomp"/>
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="201dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/imageView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="#008080"
+            android:enabled="false"
+            android:fadingEdge="horizontal|vertical"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:text="The History of Computer,The first counting device was used by the primitive people. They used sticks, stones and bones as counting tools. As human mind and technology improved with time more computing devices were developed. Some of the popular computing devices starting.
+
+   Abacus, The history of computer begins with the birth of abacus which is believed to be the first computer. It is said that Chinese invented Abacus around 4,000 years ago.
+It was a wooden rack which has metal rods with beads mounted on them. The beads were moved by the abacus operator according to some rules to perform arithmetic calculations. Abacus is still used in some countries like China, Russia and Japan.,
+Napiers bone, It was a manually-operated calculating device which was invented by John Napier (1550-1617) of Merchiston. In this calculating tool, he used 9 different ivory strips or bones marked with numbers to multiply and divide. So, the tool became known as Napiers Bones. It was also the first machine to use the decimal point.
+Pascaline, is also known as Arithmetic Machine or Adding Machine. It was invented between 1642 and 1644 by a French mathematician-philosopher Biaise Pascal. It is believed that it was the first mechanical and automatic calculator.Pascal invented this machine to help his father, a tax accountant. It could only perform addition and subtraction. It was a wooden box with a series of gears and wheels. When a wheel is rotated one revolution, it rotates the neighboring wheel. A series of windows is given on the top of the wheels to read the totals. An image of this tool is shown below.
+Stepped Reckoner or Leibnitz wheel,
+It was developed by a German mathematician-philosopher Gottfried Wilhelm Leibnitz in 1673. He improved Pascal's invention to develop this machine. It was a digital mechanical calculator which was called the stepped reckoner as instead of gears it was made of fluted drums. See the following image;
+Difference Engine,
+In the early 1820s, it was designed by Charles Babbage who is known as Father of Modern Computer. It was a mechanical computer which could perform simple calculations. It was a steam driven calculating machine designed to solve tables of numbers like logarithm tables.
+Analytical Engine,
+This calculating machine was also developed by Charles Babbage in 1830. It was a mechanical computer that used punch-cards as input. It was capable of solving any mathematical problem and storing information as a permanent memory.
+Tabulating Machine,
+It was invented in 1890, by Herman Hollerith, an American statistician. It was a mechanical tabulator based on punch cards. It could tabulate statistics and record or sort data or information. This machine was used in the 1890 U.S. Census. Hollerith also started the Hollerith?s Tabulating Machine Company which later became International Business Machine (IBM) in 1924.
+Differential Analyzer,
+It was the first electronic computer introduced in the United States in 1930. It was an analog device invented by Vannevar Bush. This machine has vacuum tubes to switch electrical signals to perform calculations. It could do 25 calculations in few minutes.
+Mark I,
+The next major changes in the history of computer began in 1937 when Howard Aiken planned to develop a machine that could perform calculations involving large numbers. In 1944, Mark I computer was built as a partnership between IBM and Harvard. It was the first programmable digital computer.
+
+"
+            android:textColorLink="@android:color/black"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/editText"
+            android:orientation="horizontal"
+            android:background="@drawable/taba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/taba"
+            android:id="@+id/bntlayout"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnSpeak"
+                android:background="@drawable/playme"
+
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/idbtn1"
+                android:layout_width="282dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/taba"
+                android:fontFamily="serif-monospace"
+                android:onClick="btnClick1"
+                android:text="Play"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnStop"
+                    android:background="@drawable/stopme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn3"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Stop"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="430dp"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="History of Computer"
+            android:textColor="#000000" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/hisdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="The first counting device was used by the primitive people. They used sticks, stones and bones as counting tools. As human mind and technology improved with time more computing devices were developed. Some of the popular computing devices starting.
+
+"
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+<!--Abacus-->
+
+        <TextView
+            android:id="@+id/abacustext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/hisdef"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:text="Abacus"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <!--For image of abacus-->
+        <ImageView
+            android:id="@+id/imageabacus"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:layout_below="@id/abacustext"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/abacus" />
+
+        <TextView
+            android:id="@+id/abacusdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageabacus"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="The history of computer begins with the birth of abacus which is believed to be the first computer. It is said that Chinese invented Abacus around 4,000 years ago.
+It was a wooden rack which has metal rods with beads mounted on them. The beads were moved by the abacus operator according to some rules to perform arithmetic calculations. Abacus is still used in some countries like China, Russia and Japan. An image of this tool is shown below;
+"
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+        <!--Napier's Bones-->
+        <TextView
+            android:id="@+id/nbtext"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/abacusdef"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:textSize="20dp"
+            android:text="Napier's Bones"
+            android:textColor="#000000" />
+
+        <!--napiers image-->
+
+        <ImageView
+            android:id="@+id/imagenb"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:layout_below="@id/nbtext"
+            app:srcCompat="@drawable/napiersbones" />
+
+
+
+        <TextView
+            android:id="@+id/nbdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text="It was a manually-operated calculating device which was invented by John Napier (1550-1617) of Merchiston. In this calculating tool, he used 9 different ivory strips or bones marked with numbers to multiply and divide. So, the tool became known as Napiers Bones. It was also the first machine to use the decimal point."
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@+id/imagenb" />
+
+
+
+        <TextView
+            android:id="@+id/pastext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/nbdef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Pascaline"
+            android:textColor="#000000" />
+        <!--image of keyboard-->
+        <ImageView
+            android:id="@+id/imagepas"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:layout_below="@id/pastext"
+            app:srcCompat="@drawable/pasculine" />
+
+
+        <TextView
+            android:id="@+id/pasdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:layout_below="@id/imagepas"
+            android:textSize="15dp"
+            android:text="Pascaline is also known as Arithmetic Machine or Adding Machine. It was invented between 1642 and 1644 by a French mathematician-philosopher Biaise Pascal. It is believed that it was the first mechanical and automatic calculator.Pascal invented this machine to help his father, a tax accountant. It could only perform addition and subtraction. It was a wooden box with a series of gears and wheels. When a wheel is rotated one revolution, it rotates the neighboring wheel. A series of windows is given on the top of the wheels to read the totals. An image of this tool is shown below."
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+        <TextView
+            android:id="@+id/steptext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pasdef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Stepped Reckoner or Leibnitz wheel"
+            android:textColor="#000000"
+            />
+        <ImageView
+            android:id="@+id/imagestep"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:layout_below="@id/steptext"
+            app:srcCompat="@drawable/steppedreckoner" />
+
+        <TextView
+            android:id="@+id/stepdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:text= "It was developed by a German mathematician-philosopher Gottfried Wilhelm Leibnitz in 1673. He improved Pascal's invention to develop this machine. It was a digital mechanical calculator which was called the stepped reckoner as instead of gears it was made of fluted drums. See the following image."
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imagestep" />
+        <!--mouse image-->
+
+
+<!--Difference Engine-->
+
+
+        <TextView
+            android:id="@+id/detext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/stepdef"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Difference Engine"
+            android:textColor="#000000"
+            />
+        <ImageView
+            android:id="@+id/imagede"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/detext"
+            app:srcCompat="@drawable/different" />
+        <TextView
+            android:id="@+id/dedef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="In the early 1820s, it was designed by Charles Babbage who is known as (Father of Modern Computer). It was a mechanical computer which could perform simple calculations. It was a steam driven calculating machine designed to solve tables of numbers like logarithm tables."
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imagede"
+            android:textColor="#000000" />
+        <!--mother board image-->
+
+
+<!--Analytical Engine-->
+
+        <TextView
+            android:id="@+id/anatext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/dedef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Analytical Engine"
+            android:textColor="#000000"/>
+        <!--ram image-->
+        <ImageView
+            android:id="@+id/imageana"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:layout_below="@id/anatext"
+            app:srcCompat="@drawable/analytical" />
+
+        <TextView
+            android:id="@+id/anadef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="This calculating machine was also developed by Charles Babbage in 1830. It was a mechanical computer that used punch-cards as input. It was capable of solving any mathematical problem and storing information as a permanent memory."
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageana"
+            android:textColor="#000000" />
+
+
+        <TextView
+            android:id="@+id/tmtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/anadef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Tabulating Machine"
+            android:textColor="#000000"/>
+        <!--cmos image-->
+        <ImageView
+            android:id="@+id/imagetm"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tmtext"
+            app:srcCompat="@drawable/tabulatingmachine" />
+        <TextView
+            android:id="@+id/tmdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="It was invented in 1890, by Herman Hollerith, an American statistician. It was a mechanical tabulator based on punch cards. It could tabulate statistics and record or sort data or information. This machine was used in the 1890 U.S. Census. Hollerith also started the Hollerith?s Tabulating Machine Company which later became International Business Machine (IBM) in 1924."
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imagetm"
+            android:textColor="#000000"/>
+
+
+
+<!--Differential Analyzer-->
+        <TextView
+            android:id="@+id/datext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tmdef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Differential Analyzer"
+            android:textColor="#000000"
+            />
+        <ImageView
+            android:id="@+id/imageda"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:layout_below="@id/datext"
+            app:srcCompat="@drawable/diffana" />
+
+        <TextView
+            android:id="@+id/dadef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="It was the first electronic computer introduced in the United States in 1930. It was an analog device invented by Vannevar Bush. This machine has vacuum tubes to switch electrical signals to perform calculations. It could do 25 calculations in few minutes."
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageda"
+            android:textColor="#000000"/>
+        <!--image of AVR-->
+
+<!--Mark I-->
+
+        <TextView
+            android:id="@+id/martext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/dadef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Mark I"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/mardef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="The next major changes in the history of computer began in 1937 when Howard Aiken planned to develop a machine that could perform calculations involving large numbers. In 1944, Mark I computer was built as a partnership between IBM and Harvard. It was the first programmable digital computer."
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/martext"
+            android:textColor="#000000"/>
+        <!--image of MARK 1-->
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+           android:layout_below="@id/mardef"
+            >
+
+            <Button
+                android:id="@+id/quiz1"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/greenbutton"
+                android:text="I want to take a Quiz"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="25dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

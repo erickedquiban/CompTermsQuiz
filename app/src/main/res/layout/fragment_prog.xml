@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:background="@drawable/compfrag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="638dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            app:srcCompat="@drawable/compma"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="30dp"
+
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Parts of Motherboard"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/kahatext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView2"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="PCI Slot"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/kahadef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/kahatext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="A Peripheral Component Interconnect (PCI) slot is a connecting apparatus for a 32-bit computer bus. "
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+        <ImageView
+            android:id="@+id/imagepci"
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/kahadef"
+            app:srcCompat="@drawable/compcase" />
+
+
+        <!--CPU -->
+
+
+        <TextView
+            android:id="@+id/cputext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagepci"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="CPU(Central Processing Unit)"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/cpudef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cputext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Also known as the microprocessor or the processor, the CPU is the computer's brain. It is responsible for fetching, decoding, and executing program instructions as well as performing mathematical and logical calculations."
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+        <ImageView
+            android:id="@+id/imagecpu"
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/cpudef"
+            app:srcCompat="@drawable/compcase" />
+
+
+        <!--Cache Memory  -->
+
+
+        <TextView
+            android:id="@+id/cachetext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagecpu"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Cache Memory"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/cachedef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cachetext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Cache memory is a small block of high-speed memory (RAM) that enhances PC performance by pre-loading information from the (relatively slow) main memory and passing it to the processor on demand."
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+        <ImageView
+            android:id="@+id/imagecache"
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/cachedef"
+            app:srcCompat="@drawable/compcase" />
+
+        <!--Expansion Bus-->
+
+
+        <TextView
+            android:id="@+id/ebtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagecache"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Expansion Bus"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/ebdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ebtext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="
+An expansion bus is an input/output pathway from the CPU to peripheral devices and it is typically made up of a series of slots on the motherboard. Expansion boards (cards) plug into the bus. PCI is the most common expansion bus in a PC and other hardware platforms."
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+        <ImageView
+            android:id="@+id/imageeb"
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/ebdef"
+            app:srcCompat="@drawable/compcase" />
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

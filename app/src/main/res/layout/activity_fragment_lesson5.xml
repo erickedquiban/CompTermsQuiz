@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:background="@drawable/compfrag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="638dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            app:srcCompat="@drawable/plimage"
+            />
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="201dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/imageView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="#008080"
+            android:enabled="false"
+            android:fadingEdge="horizontal|vertical"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:text="Top 10 Programming Language,
+
+            Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace
+             Number two Javascript,
+            JavaScript, often abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification.
+              Number three Java,
+             Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible
+               Number four Swift,
+            Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. for iOS, iPadOS, macOS, watchOS, tvOS, Linux, and z/OS.
+                Number five Go,
+               Go, also known as Golang, is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson.
+                 Number six C sharp,
+                C# is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines
+                  Number seven C Plus Plus,C plus plus is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or C with Classes
+                   Number eight Scala,Scala is a general-purpose programming language providing support for functional programming and a strong static type system.
+                    Number nine Kotlin,Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference
+                     Number ten Ruby,Ruby is an interpreted, high-level, general-purpose programming language.
+"
+            android:textColorLink="@android:color/black"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/editText"
+            android:orientation="horizontal"
+            android:background="@drawable/taba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:id="@+id/bntlayout"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnSpeak"
+                    android:background="@drawable/playme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn1"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Play"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnStop"
+                    android:background="@drawable/stopme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn3"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Stop"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+//end of play and pause button
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="130dp"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Top 10 Programming Language"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/pythontext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView2"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Python"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imagepython"
+
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_below="@id/pythontext"
+            app:srcCompat="@drawable/python" />
+
+        <TextView
+            android:id="@+id/pythondef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagepython"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text=" Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace"
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+
+
+
+        <!--Javascript -->
+
+
+        <TextView
+            android:id="@+id/jstext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pythondef"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Javascript"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <ImageView
+            android:id="@+id/imagejs"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/jstext"
+            app:srcCompat="@drawable/javascript" />
+
+        <TextView
+            android:id="@+id/jsdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagejs"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="JavaScript, often abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification. "
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+
+
+
+        <!--Java-->
+
+
+        <TextView
+            android:id="@+id/javatext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/jsdef"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="JAVA"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imagejava"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/javatext"
+            app:srcCompat="@drawable/java" />
+
+
+        <TextView
+            android:id="@+id/javadef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagejava"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#000000"
+            android:text="Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+        <!--Swift-->
+
+
+        <TextView
+            android:id="@+id/swifttext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/javadef"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Swift"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+        <ImageView
+            android:id="@+id/imageswift"
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/swifttext"
+            app:srcCompat="@drawable/swift" />
+
+        <TextView
+            android:id="@+id/swiftdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageswift"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. for iOS, iPadOS, macOS, watchOS, tvOS, Linux, and z/OS. "
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+        <!--Go-->
+
+<!--Title -->
+        <TextView
+            android:id="@+id/gotext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/swiftdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Go"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <!--Image-->
+
+        <ImageView
+            android:id="@+id/imagego"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/gotext"
+            app:srcCompat="@drawable/goprog" />
+
+
+        <!--Description -->
+        <TextView
+            android:id="@+id/godef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagego"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Go, also known as Golang, is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson"
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+
+        <!--C#-->
+
+        <!--Title -->
+        <TextView
+            android:id="@+id/ctext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/godef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="C#"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <!--Image-->
+
+        <ImageView
+            android:id="@+id/imagec"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/ctext"
+            app:srcCompat="@drawable/c" />
+
+        <!--Description -->
+        <TextView
+            android:id="@+id/cdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagec"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="C# is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines"
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+        <!--C++-->
+
+        <!--Title -->
+        <TextView
+            android:id="@+id/cptext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="C++"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"/>
+        <!--Image-->
+
+        <ImageView
+            android:id="@+id/imagecp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/cptext"
+            app:srcCompat="@drawable/cpp" />
+
+
+        <!--Description -->
+        <TextView
+            android:id="@+id/cpdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagecp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or C with Classes"
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+        <!--Scala-->
+
+        <!--Title -->
+        <TextView
+            android:id="@+id/scalatext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cpdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Scala"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <!--Image-->
+
+        <ImageView
+            android:id="@+id/imagescala"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/scalatext"
+            app:srcCompat="@drawable/scala" />
+
+        <!--Description -->
+        <TextView
+            android:id="@+id/scaladef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagescala"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Scala is a general-purpose programming language providing support for functional programming and a strong static type system. Designed to be concise, many of Scala's design decisions aimed to address criticisms of Java. "
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+
+        <!--Kotlin-->
+
+        <!--Title -->
+        <TextView
+            android:id="@+id/kotlintext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/scaladef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Kotlin"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <!--Image-->
+
+        <ImageView
+            android:id="@+id/imagekotlin"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/kotlintext"
+            app:srcCompat="@drawable/kotlin" />
+
+        <!--Description -->
+        <TextView
+            android:id="@+id/kotlindef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagekotlin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of its standard library depends on the Java Class Library, but type inference allows its syntax to be more concise."
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+
+        <!--Ruby-->
+
+        <!--Title -->
+        <TextView
+            android:id="@+id/rubytext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/kotlindef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Ruby"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/imageruby"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/rubytext"
+            app:srcCompat="@drawable/ruby" />
+
+        <!--Description -->
+        <TextView
+            android:id="@+id/rubydef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageruby"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Ruby is an interpreted, high-level, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro Matz Matsumoto in Japan. Ruby is dynamically typed and uses garbage collection. "
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+        <!--Image-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+          android:layout_below="@id/rubydef"
+            >
+
+            <Button
+                android:id="@+id/quiz1"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/greenbutton"
+                android:text="I want to take a Quiz"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="25dp"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

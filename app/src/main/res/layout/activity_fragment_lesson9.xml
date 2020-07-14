@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:background="@drawable/compfrag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="638dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            app:srcCompat="@drawable/programerlang"
+            />
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="201dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/imageView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="#008080"
+            android:enabled="false"
+            android:fadingEdge="horizontal|vertical"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:text="Most Influential Programmers of all time,
+   Number one Larry Page,
+            Larry Page, along with his co-founder Sergey Brin, invented Google. Today, Google continues to serve as the world’s leading search engine, as it makes the internet easily accessible to billions of people around the world.
+
+             Number two Dennis Ritchie,
+             Dennis Ritchie was an American programmer, founder of the C programming language, and co-developer of UNIX.
+
+              Number three Bill Gates,
+              Bill Gates is a computer programmer and co-founder of Microsoft, which is the largest software company in the world. Together, Bill Gates and Paul Allen revolutionized the world of software and computing.
+
+
+               Number four Mark Zuckerberg,
+              While Facebook is a topic that usually sparks some debate, there’s no doubt that Mark Zuckerberg changed the world forever when he invented the world’s first hyperconnected social network.
+
+                Number five Ken Thompson,
+                Ken Thompson, who is often considered one of the pioneers of computer science, designed and implemented the original UNIX operating system. Today, UNIX and its variants continue to run on smartphones, supercomputers, military systems, global banking networks, and more.
+
+                 Number six Linus Torvalds,
+                 Linus Torvalds is a Finnish-American software engineer and creator of the Linux kernel, which became the kernel for operating systems like Linux OS, Chrome OS, and Android. Torvalds also created the version control system Git.
+
+
+                  Number seven Satoshi Nakamoto,
+                 Satoshi Nakamoto is a bit of a strange case, because there is some uncertainty about the true identity of the pseudonymous Bitcoin founder. And, there are still many questions about the future that Bitcoin holds.
+
+
+
+                   Number eight Ada Lovelace,
+                  Ada Lovelace was an English mathematician, and the world’s first computer programmer. She was born in the year 1815, and eventually recognized that the Analytical Engine could be used for purposes beyond just crunching numbers.
+
+
+
+                    Number nine Tim Berners-Lee,
+                    Tim Berners-Lee is the inventor of the internet. He imagined an open platform where people everywhere could freely share information, access opportunities, and work with one another despite geographical limitations.
+
+
+                     Number ten Alan Turing
+                   Alan Turing (pictured) was a computer scientist, mathematician, logician, and creator of the Turing machine, which simulates computer algorithms. The Turing machine played a vital role in deciphering codes used during the Second World War, and therefore made Alan Turing one of the most important figures of WW2.
+"
+            android:textColorLink="@android:color/black"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/editText"
+            android:orientation="horizontal"
+            android:background="@drawable/taba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:id="@+id/bntlayout"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnSpeak"
+                    android:background="@drawable/playme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn1"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Play"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnStop"
+                    android:background="@drawable/stopme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn3"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Stop"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="138dp"
+            android:layout_below="@+id/imageView2"
+           android:layout_marginTop="130dp"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+
+            android:text="Most Influential Programmers of All Time"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <!--TITLE-->
+        <TextView
+            android:id="@+id/kahatext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            android:text="Larry Page"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <!--For image of case-->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_below="@+id/kahatext"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/larry" />
+
+        <TextView
+            android:id="@+id/kahadef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imageView3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#000000"
+            android:text="Larry Page, along with his co-founder Sergey Brin, invented Google. Today, Google continues to serve as the world’s leading search engine, as it makes the internet easily accessible to billions of people around the world.
+Interestingly, Google PageRank is named after Larry Page, since Page was the programmer who created the innovative PageRank search engine algorithm.
+Now, as CEO of Alphabet (Google’s parent company), Page continues to oversee cutting-edge companies that revolve around human aging, Artificial Intelligence (AI), self-driving cars, and much more.
+"
+            android:layout_marginTop="30dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+        <!--Dennis Ritchie-->
+        <TextView
+            android:id="@+id/monitortext"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/kahadef"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:textSize="25dp"
+            android:text="Dennis Ritchie"
+            android:maxLines="2"
+            android:textColor="#000000" />
+        <!--monitor image-->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_below="@id/monitortext"
+            app:srcCompat="@drawable/dennis" />
+
+
+        <TextView
+            android:id="@+id/monitodef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Dennis Ritchie was an American programmer, founder of the C programming language, and co-developer of UNIX.
+The C programming language is efficient, portable, and powerful. It was invented sometime between the years 1969 and 1973, at Bell Labs. Best of all, C is still one of the most popular programming languages today, as it’s commonly used in embedded hardware programming, open source software, systems programming, 3D movies, and more.
+Since just about everything on the web uses C and UNIX, Ritchie’s contributions to the world of programming are immense.
+"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@+id/imageView4"/>
+
+
+        <!--Bill Gates-->
+        <TextView
+            android:id="@+id/keytext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/monitodef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Bill Gates"
+            android:maxLines="2"
+            android:textColor="#000000" />
+        <!--image of keyboard-->
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/keytext"
+            app:srcCompat="@drawable/bill" />
+
+
+        <TextView
+            android:id="@+id/keydef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:layout_below="@id/imageView5"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+           android:text="Bill Gates is a computer programmer and co-founder of Microsoft, which is the largest software company in the world. Together, Bill Gates and Paul Allen revolutionized the world of software and computing.
+Despite being on track to earn a net worth of over $1 trillion dollars, Gates continues to invest billions of dollars in some of the world’s most important philanthropic causes, like improving global access to healthcare, and reducing extreme poverty.
+Gates is ultimately one of the most well-known and generous programmers in the world.
+"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+        <!--Mark Zuckerberg-->
+
+        <TextView
+            android:id="@+id/mousetext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/keydef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Mark Zuckerberg"
+            android:maxLines="2"
+            android:textColor="#000000"/>
+
+
+        <!--Mark Zuckerberg image-->
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_below="@id/mousetext"
+            app:srcCompat="@drawable/mark" />
+
+
+        <TextView
+            android:id="@+id/mousedef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="While Facebook is a topic that usually sparks some debate, there’s no doubt that Mark Zuckerberg changed the world forever when he invented the world’s first hyperconnected social network.
+Through Facebook, billions of people are able to communicate with one another free of charge, regardless of one’s geographic location.
+This is quite an amazing feat that has improved global communication and connectivity by a large margin.
+"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView6"/>
+
+
+        <!--Ken Thompson-->
+        <TextView
+            android:id="@+id/mother"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mousedef"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Ken Thompson "
+            android:maxLines="2"
+            android:textColor="#000000"/>
+        <!--mother board image-->
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/mother"
+            app:srcCompat="@drawable/kenthomson" />
+        <!--Mother Def-->
+        <TextView
+            android:id="@+id/motherdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Ken Thompson, who is often considered one of the pioneers of computer science, designed and implemented the original UNIX operating system. Today, UNIX and its variants continue to run on smartphones, supercomputers, military systems, global banking networks, and more.
+Thompson, along with Dennis Ritchie, also re-wrote most of UNIX into the C programming language in 1973, which made development and porting significantly easier. Additionally, Thompson went on to create Belle, which was the first machine to achieve master-level play in chess.
+Overall, Thompson is a programming legend who has made life significantly better for programmers everywhere.
+"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView7"
+            android:textColor="#000000"/>
+
+
+        <!--Linus Torvalds-->
+        <TextView
+            android:id="@+id/ram"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/motherdef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Linus Torvalds "
+            android:maxLines="2"
+            android:textColor="#000000"/>
+        <!--Linus Torvalds image-->
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/ram"
+            app:srcCompat="@drawable/linus" />
+
+
+        <TextView
+            android:id="@+id/ramdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Linus Torvalds is a Finnish-American software engineer and creator of the Linux kernel, which became the kernel for operating systems like Linux OS, Chrome OS, and Android. Torvalds also created the version control system Git.
+Torvalds believes “open source is the only right way to do software,” and has won numerous awards for his contributions in the technology arena. He’s an exceptionally talented and influential coder.
+"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView8"
+            android:textColor="#000000"
+            />
+
+        <!--Satoshi Nakamoto-->
+        <TextView
+            android:id="@+id/battery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ramdef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Satoshi Nakamoto "
+            android:maxLines="2"
+            android:textColor="#000000"
+            />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/battery"
+            app:srcCompat="@drawable/satoshi" />
+
+        <TextView
+            android:id="@+id/batef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Satoshi Nakamoto is a bit of a strange case, because there is some uncertainty about the true identity of the pseudonymous Bitcoin founder. And, there are still many questions about the future that Bitcoin holds.
+But as of today, with the world-changing trajectory that Bitcoin is headed towards, it’s safe to say that Nakamoto is a programmer who has already impacted how financial transactions will be conducted forever. In addition to designing Bitcoin, Nakamoto also created the first blockchain database.
+Bitcoin continues to be the world’s leading digital currency, and has a bright future, all thanks to the mysterious programmer known as Satoshi Nakamoto.
+"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView14"
+            android:textColor="#000000"
+            />
+
+
+        <!--Ada Lovelace-->
+
+
+        <TextView
+            android:id="@+id/compavr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/batef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Ada Lovelace "
+            android:maxLines="2"
+            android:textColor="#000000"/>
+        <!--image of AVR-->
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/compavr"
+            app:srcCompat="@drawable/ada" />
+        <TextView
+            android:id="@+id/avref"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Ada Lovelace was an English mathematician, and the world’s first computer programmer. She was born in the year 1815, and eventually recognized that the Analytical Engine could be used for purposes beyond just crunching numbers.
+Lovelace examined how technology related to humans and society, and then went on to create the first algorithm that could be used by the Analytical Engine.
+She was truly ahead of her time, and had a tremendous influence on the history of computers.
+"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView10"
+            android:textColor="#000000"/>
+
+
+        <!--Tim Berners-Lee-->
+
+
+        <TextView
+            android:id="@+id/tim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/avref"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Tim Berners-Lee "
+            android:maxLines="2"
+            android:textColor="#000000"/>
+        <!--image of AVR-->
+        <ImageView
+            android:id="@+id/imagetim"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/tim"
+            app:srcCompat="@drawable/tim" />
+        <TextView
+            android:id="@+id/timmdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Tim Berners-Lee is the inventor of the internet. He imagined an open platform where people everywhere could freely share information, access opportunities, and work with one another despite geographical limitations.
+In many ways, Lee’s vision has come to fruition, as the internet has become an amazing place where programmers are free to collaborate on any projects that they like. Thanks to Tim Berners-Lee, the world wide web continues to provide abundant opportunities for web developers, game programmers, and people from all walks of life.
+"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imagetim"
+            android:textColor="#000000"/>
+
+
+        <!--Alan Turing-->
+
+
+        <TextView
+            android:id="@+id/allan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/timmdef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Alan Turing "
+            android:maxLines="2"
+            android:textColor="#000000"/>
+        <!--image of AVR-->
+        <ImageView
+            android:id="@+id/imageallan"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/allan"
+            app:srcCompat="@drawable/alln" />
+        <TextView
+            android:id="@+id/allandef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Alan Turing (pictured) was a computer scientist, mathematician, logician, and creator of the Turing machine, which simulates computer algorithms. The Turing machine played a vital role in deciphering codes used during the Second World War, and therefore made Alan Turing one of the most important figures of WW2.
+It’s for this reason that many people actually consider Alan Turing to be the greatest hero of WW2, and the “father” of modern day computing.
+Today, Turing’s name lives on through the Turing Prize, which is the highest award that one can achieve in the field of computing.
+"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageallan"
+            android:textColor="#000000"/>
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/allandef"
+            >
+
+            <Button
+                android:id="@+id/quiz1"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/greenbutton"
+                android:text="I want to take a Quiz"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="25dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+

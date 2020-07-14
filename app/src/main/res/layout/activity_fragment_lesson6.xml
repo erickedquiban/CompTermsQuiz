@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:background="@drawable/compfrag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="638dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            app:srcCompat="@drawable/socail"
+            />
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="201dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/imageView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="#008080"
+            android:enabled="false"
+            android:fadingEdge="horizontal|vertical"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:text="Top 10 Social Media,
+            Facebook,Facebook  is the biggest social media site around, with more than two billion people using it every month.
+            Youtube,YouTube is a video-sharing platform where users watch a billion hour of videos every day.
+            Whatsapp,WhatsApp is a messaging app used by people in over 180 countries. Initially, WhatsApp was only used by people to communicate with their family and friends.
+            Messenger,Messenger used to be a messaging feature within Facebook, and since 2011, Facebook has made Messenger into a standalone app by itself and greatly expanded on its features.
+            WeChat,WeChat grew from a messaging app, just like WhatsApp and Messenger, into an all-in-one platform.
+            Instagram,Instagram is a photo and video sharing social media app. It allows you to share a wide range of content such as photos, videos, Stories, and live videos.
+            Tik Tok,TikTok is a Chinese iOS and Android social media video app for creating and sharing short lip-sync, comedy, and talent videos. The app was launched in 2017 by Chinese developer ByteDance, for markets outside of China.
+            Twitter,Twitter is a social media site for news, entertainment, sports, politics, and more.
+            LinkedIn,LinkedIn is an American business and employment-oriented service that operates via websites and mobile apps
+            Viber,Viber is a cross-platform voice over IP and instant messaging software application operated by Japanese multinational company Rakuten, provided as a freeware for the Android, iOS, Microsoft Windows, macOS and Linux platforms
+
+"
+
+
+
+            android:textColorLink="@android:color/black"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/editText"
+            android:orientation="horizontal"
+            android:background="@drawable/taba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:id="@+id/bntlayout"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnSpeak"
+                    android:background="@drawable/playme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn1"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Play"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnStop"
+                    android:background="@drawable/stopme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn3"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Stop"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Top 10 Social Media"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/fbtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView2"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Facebook"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <ImageView
+            android:id="@+id/imagefb"
+
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_below="@id/fbtext"
+            app:srcCompat="@drawable/faceb" />
+
+        <TextView
+            android:id="@+id/fbdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagefb"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text=" Facebook  is the biggest social media site around, with more than two billion people using it every month. That’s almost a third of the world’s population! There are more than 65 million businesses using Facebook Pages and more than six million advertisers actively promoting their business on Facebook, which makes it a pretty safe bet if you want to have a presence on social media. "
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+        <!--Youtube -->
+<!--Title-->
+
+        <TextView
+            android:id="@+id/youtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fbdef"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Youtube"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+        <!--Image-->
+        <ImageView
+            android:id="@+id/imageyou"
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/youtext"
+            app:srcCompat="@drawable/youtube" />
+
+        <!--Description -->
+        <TextView
+            android:id="@+id/youdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageyou"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="YouTube is a video-sharing platform where users watch a billion hour of videos every day. To get started, you can create a YouTube channel for your brand where you can upload videos for your subscribers to view, like, comment, and share."
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+        <!--What'sapp-->
+
+        <!--Title-->
+        <TextView
+            android:id="@+id/whattext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/youdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Whatsapp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+        <ImageView
+            android:id="@+id/imagewhat"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/whattext"
+            app:srcCompat="@drawable/whats" />
+
+
+        <TextView
+            android:id="@+id/whatdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagewhat"
+            android:layout_alignParentEnd="true"
+            android:text="WhatsApp is a messaging app used by people in over 180 countries. Initially, WhatsApp was only used by people to communicate with their family and friends. Gradually, people started communicating with businesses via WhatsApp. (When I was in Bangkok to buy a new suit, I communicated with the tailor via WhatsApp.)"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+        <!--Messenger-->
+
+
+        <TextView
+            android:id="@+id/mestext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/whatdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Messenger"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+        <ImageView
+            android:id="@+id/imagemes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/mestext"
+            app:srcCompat="@drawable/mes" />
+
+
+
+        <TextView
+            android:id="@+id/mesdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagemes"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Messenger used to be a messaging feature within Facebook, and since 2011, Facebook has made Messenger into a standalone app by itself and greatly expanded on its features. Businesses can now advertise, create chatbots, send newsletters, and more on Messenger. These features have given businesses a myriad of new ways to engage and connect with their customers."
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+        <!--WeChat-->
+
+        <!--Title -->
+        <TextView
+            android:id="@+id/wechattext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mesdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="WeChat"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <!--Image-->
+
+        <ImageView
+            android:id="@+id/imagewechat"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/wechattext"
+            app:srcCompat="@drawable/wechat" />
+
+        <!--Description -->
+        <TextView
+            android:id="@+id/wechatdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagewechat"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#000000"
+            android:text="WeChat grew from a messaging app, just like WhatsApp and Messenger, into an all-in-one platform. Besides messaging and calling, users can now use WeChat to shop online and make payment offline, transfer money, make reservations, book taxis, and more."
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+
+
+        <!--Instragram-->
+
+        <!--Title -->
+        <TextView
+            android:id="@+id/instext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/wechatdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Instagram"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+
+        <!--Image-->
+
+        <ImageView
+            android:id="@+id/imageins"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/instext"
+            app:srcCompat="@drawable/insta" />
+
+        <!--Description -->
+        <TextView
+            android:id="@+id/insdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageins"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Instagram is a photo and video sharing social media app. It allows you to share a wide range of content such as photos, videos, Stories, and live videos. It has also recently launched IGTV for longer-form videos."
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+        <!--Tik Tok-->
+
+        <!--Title -->
+        <TextView
+            android:id="@+id/tiktext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/insdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Tik Tok"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"/>
+        <!--Image-->
+
+        <ImageView
+            android:id="@+id/imagetik"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/tiktext"
+            app:srcCompat="@drawable/tik" />
+
+
+
+        <!--Description -->
+        <TextView
+            android:id="@+id/tikdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagetik"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="TikTok is a Chinese iOS and Android social media video app for creating and sharing short lip-sync, comedy, and talent videos. The app was launched in 2017 by Chinese developer ByteDance, for markets outside of China. "
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+        <!--Twitter-->
+
+        <!--Title -->
+        <TextView
+            android:id="@+id/Twittertext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tikdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Twitter"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <!--Image-->
+
+        <ImageView
+            android:id="@+id/imageTwitter"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/Twittertext"
+            app:srcCompat="@drawable/twit" />
+
+        <!--Description -->
+        <TextView
+            android:id="@+id/Twitterdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageTwitter"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Twitter is a social media site for news, entertainment, sports, politics, and more. What makes Twitter different from most other social media sites is that it has a strong emphasis on real-time information — things that are happening right now."
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+
+        <!--LinkedIn-->
+
+        <!--Title -->
+        <TextView
+            android:id="@+id/linktext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Twitterdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="LinkedIn"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <!--Image-->
+
+        <ImageView
+            android:id="@+id/imagelink"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/linktext"
+            app:srcCompat="@drawable/link" />
+
+        <!--Description -->
+        <TextView
+            android:id="@+id/linkdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagelink"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="LinkedIn is an American business and employment-oriented service that operates via websites and mobile apps"
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+
+        <!--Viber-->
+
+        <!--Title -->
+        <TextView
+            android:id="@+id/vibertext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linkdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Viber"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <!--Image-->
+
+        <ImageView
+            android:id="@+id/imageviber"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/vibertext"
+            app:srcCompat="@drawable/viber" />
+
+        <!--Description -->
+        <TextView
+            android:id="@+id/viberdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageviber"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Viber is a cross-platform voice over IP and instant messaging software application operated by Japanese multinational company Rakuten, provided as a freeware for the Android, iOS, Microsoft Windows, macOS and Linux platforms"
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/viberdef"
+            >
+
+            <Button
+                android:id="@+id/quiz1"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/greenbutton"
+                android:text="I want to take a Quiz"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="25dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

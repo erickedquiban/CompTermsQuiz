@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:background="@drawable/compfrag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="638dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            app:srcCompat="@drawable/parte"
+            />
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="201dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/imageView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="#008080"
+            android:enabled="false"
+            android:fadingEdge="horizontal|vertical"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:text="Parts of Computer,,
+            Computer Case,
+            The computer case is the metal and plastic box that contains the main components of the computer, including the motherboard, central processing unit (CPU), and power supply.
+            Monitor,
+            The monitor works with a video card, located inside the computer case, to display images and text on the screen.
+            Keyboard,
+            A set of keys used to operate a computer.
+            Mouse,
+            The mouse is another important tool for communicating with computers. Commonly known as a pointing device, it lets you point to objects on the screen, click on them, and move them.
+There are two main mouse types: optical and mechanical. The optical mouse uses an electronic eye to detect movement and is easier to clean. The mechanical mouse uses a rolling ball to detect movement and requires regular cleaning to work properly.
+
+Motherboard,
+A motherboard is one of the most essential parts of a computer system. It holds together many of the crucial components of a computer, including the central processing unit
+             (CPU), memory and connectors for input and output devices.
+             RAM or Random Access Memory,
+             is a form of computer data storage that stores data and machine code currently being used. A random-access memory device allows data items to be read or written in almost the same amount of time irrespective of the physical location of data inside the memory.
+             CMOS Battery,
+             It is traditionally called CMOS RAM because it uses a volatile, low-power complementary metal-oxide-semiconductor (CMOS) SRAM (such as the Motorola MC146818 or similar) powered by a small CMOS battery when system and standby power is off. The typical NVRAM capacity is 256 bytes.
+             A,V,R,
+             Short for automatic voltage regulator, AVR is a hardware device used to maintain a voltage to electronic devices"
+            android:textColorLink="@android:color/black"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/editText"
+            android:orientation="horizontal"
+            android:background="@drawable/taba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:id="@+id/bntlayout"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnSpeak"
+                    android:background="@drawable/playme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn1"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Play"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnStop"
+                    android:background="@drawable/stopme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn3"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Stop"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="130dp"
+            android:gravity="center"
+            android:textSize="30dp"
+
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Computer Parts"
+            android:textColor="#000000" />
+<!--TITLE-->
+        <TextView
+            android:id="@+id/kahatext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            android:text="CASE"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <!--For image of case-->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/kahatext"
+            app:srcCompat="@drawable/compcase" />
+
+        <TextView
+            android:id="@+id/kahadef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imageView3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="The computer case is the metal and plastic box that contains the main components of the computer, including the motherboard, central processing unit (CPU), and power supply. "
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+        <!--Monitor-->
+        <TextView
+            android:id="@+id/monitortext"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:layout_below="@+id/kahadef"
+           android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:textSize="25dp"
+            android:text="MONITOR"
+            android:textColor="#000000" />
+        <!--monitor image-->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/monitortext"
+            app:srcCompat="@drawable/compmoni" />
+
+
+        <TextView
+            android:id="@+id/monitodef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@+id/imageView4"
+            android:text="The monitor works with a video card, located inside the computer case, to display images and text on the screen."/>
+
+
+<!--keyboard-->
+        <TextView
+            android:id="@+id/keytext"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/monitodef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="KEYBOARD"
+            android:textColor="#000000" />
+        <!--image of keyboard-->
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/keytext"
+            app:srcCompat="@drawable/compkey" />
+
+
+        <TextView
+            android:id="@+id/keydef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:layout_below="@id/imageView5"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="A set of keys used to operate a computer"/>
+
+
+<!--Mouse Title-->
+
+        <TextView
+            android:id="@+id/mousetext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/keydef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="MOUSE"
+            android:textColor="#000000"/>
+
+
+        <!--mouse image-->
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/mousetext"
+            app:srcCompat="@drawable/compmouse" />
+
+
+        <TextView
+            android:id="@+id/mousedef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView6"
+            android:text="The mouse is another important tool for communicating with computers. Commonly known as a pointing device, it lets you point to objects on the screen, click on them, and move them.
+There are two main mouse types: optical and mechanical. The optical mouse uses an electronic eye to detect movement and is easier to clean. The mechanical mouse uses a rolling ball to detect movement and requires regular cleaning to work properly." />
+
+
+<!--Motherboard-->
+        <TextView
+            android:id="@+id/mother"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mousedef"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="MOTHER BOARD"
+            android:textColor="#000000"/>
+        <!--mother board image-->
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/mother"
+            app:srcCompat="@drawable/compma" />
+<!--Mother Def-->
+        <TextView
+            android:id="@+id/motherdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView7"
+            android:textColor="#000000"
+            android:text="A motherboard is one of the most essential parts of a computer system. It holds together many of the crucial components of a computer, including the central processing unit
+             (CPU), memory and connectors for input and output devices" />
+
+<!--RAM-->
+        <TextView
+        android:id="@+id/ram"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/motherdef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+        android:text="RAM"
+        android:textColor="#000000"/>
+        <!--ram image-->
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/ram"
+            app:srcCompat="@drawable/compram" />
+
+
+        <TextView
+            android:id="@+id/ramdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView8"
+            android:textColor="#000000"
+            android:text="Random-access memory is a form of computer data storage that stores data and machine code currently being used. A random-access memory device allows data items to be read or written in almost the same amount of time irrespective of the physical location of data inside the memory."
+            />
+
+<!--Battery-->
+        <TextView
+            android:id="@+id/battery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ramdef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="CMOS BATTERY"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/batef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/battery"
+            android:textColor="#000000"
+            android:text="It is traditionally called CMOS RAM because it uses a volatile, low-power complementary metal-oxide-semiconductor (CMOS) SRAM (such as the Motorola MC146818 or similar) powered by a small CMOS battery when system and standby power is off. The typical NVRAM capacity is 256 bytes."
+            />
+        <!--cmos image-->
+
+
+        <TextView
+            android:id="@+id/compavr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/batef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="AVR"
+            android:textColor="#000000"/>
+        <!--image of AVR-->
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/compavr"
+            app:srcCompat="@drawable/compavr" />
+        <TextView
+            android:id="@+id/avref"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView10"
+            android:textColor="#000000"
+            android:text="Short for automatic voltage regulator, AVR is a hardware device used to maintain a voltage to electronic devices" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/avref"
+            >
+
+            <Button
+                android:id="@+id/quiz1"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/greenbutton"
+                android:text="I want to take a Quiz"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="25dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.comptermsquiz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:banner="@drawable/mwlogo"
+        android:icon="@mipmap/mwlogo"
+        android:label="Mother Words"
+        android:logo="@mipmap/mwlogo"
+        android:roundIcon="@mipmap/mwlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".soundofhistory"></activity>
+        <activity android:name=".featuresaicswebsite" />
+        <activity android:name=".featuresnasa" />
+        <activity android:name=".Quiz9" />
+        <activity android:name=".Quizinfluencialofcomp" />
+        <activity android:name=".Quiz8" />
+        <activity android:name=".Quizsocialmediaofcomf" />
+        <activity android:name=".Quiz7" />
+        <activity android:name=".Quizinternetofcomp" />
+        <activity android:name=".Quiz6" />
+        <activity android:name=".Quizstartofcomp" />
+        <activity android:name=".Quiz5" />
+        <activity android:name=".Quizcreatorofcomp" />
+        <activity android:name=".Quizprogrammingofcomp" />
+        <activity android:name=".Quiz4" />
+        <activity android:name=".Quiz3" />
+        <activity android:name=".Quizmotherofcomp" />
+        <activity android:name=".Quiz2" />
+        <activity android:name=".Quizhistoryofcomp" />
+        <activity android:name=".Quiz1Activity" />
+        <activity android:name=".Quizpartofcomp" />
+        <activity android:name=".popoupss" />
+        <activity android:name=".FragmentLesson10" />
+        <activity android:name=".FragmentLesson9" />
+        <activity android:name=".FragmentLesson8" />
+        <activity android:name=".FragmentLesson7" />
+        <activity android:name=".FragmentLesson6" />
+        <activity android:name=".FragmentLesson5" />
+        <activity android:name=".FragmentLesson4" />
+        <activity android:name=".FragmentSetting" />
+        <activity android:name=".fragment_setting" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ListenActivity" />
+        <activity android:name=".QuizhistoryActivity" />
+        <activity android:name=".QuizProgActivity" />
+        <activity android:name=".HighscoreActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CompActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

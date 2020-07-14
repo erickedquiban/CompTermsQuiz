@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/computer"
+            android:title="Home"
+
+            />
+    </group>
+
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/computer"
+            android:title="About Computer Fundamentals" >
+    <menu>
+
+
+        <item
+            android:id="@+id/nav_his"
+            android:icon="@drawable/past"
+            android:title="Brief History" />
+        <item
+            android:id="@+id/nav_parts"
+            android:icon="@drawable/parts"
+            android:title="Parts of the Computer" />
+
+
+        <item
+            android:id="@+id/nav_les4"
+            android:icon="@drawable/motherboard"
+            android:title="Parts of Motherboard" />
+<!--        <item-->
+<!--            android:id="@+id/nav_prog"-->
+<!--            android:icon="@drawable/ic_user"-->
+<!--            android:title="Lesson4:Top 10 Programming Language " />-->
+
+
+    </menu>
+        </item>
+
+   <item
+        android:id="@+id/dev"
+        android:title="Learn About Programming Language">
+
+       <menu>
+
+           <item
+               android:id="@+id/nav_les8"
+               android:icon="@drawable/developer"
+               android:title="The Creator" />
+           <item
+               android:id="@+id/nav_les5"
+               android:icon="@drawable/prog"
+               android:title="Top 10 Programming Language" />
+
+           <item
+               android:id="@+id/nav_les9"
+               android:icon="@drawable/helloworld"
+               android:title="Most Influential Programmers"/>
+
+
+
+
+</menu>
+   </item>
+
+   <item
+        android:id="@+id/net"
+        android:title=" The Internet">
+
+<menu>
+
+    <item
+        android:id="@+id/nav_les7"
+        android:icon="@drawable/internet"
+        android:title="Introduction" />
+
+
+    <item
+        android:id="@+id/nav_les10"
+        android:icon="@drawable/website"
+        android:title="Website for Programming" />
+    <item
+        android:id="@+id/nav_les6"
+        android:icon="@drawable/facebook"
+        android:title="Top 10 Socail Media" />
+
+</menu>
+</item>
+
+
+</menu>

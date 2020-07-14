@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:background="@drawable/compfrag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="638dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            app:srcCompat="@drawable/compma"
+            />
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="201dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/imageView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="#008080"
+            android:enabled="false"
+            android:fadingEdge="horizontal|vertical"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:text="Parts of Motherboard,
+
+ PCI Slot,
+            A Peripheral Component Interconnect (PCI) slot is a connecting apparatus for a 32-bit computer bus.
+
+            CPU(Central Processing Unit),
+            Also known as the microprocessor or the processor, the CPU is the computer's brain. It is responsible for fetching, decoding, and executing program instructions as well as performing mathematical and logical calculations.
+
+            Cache Memory,
+            Cache memory is a small block of high-speed memory (RAM) that enhances PC performance by pre-loading information from the (relatively slow) main memory and passing it to the processor on demand.
+
+            Expansion Bus,
+            An expansion bus is an input/output pathway from the CPU to peripheral devices and it is typically made up of a series of slots on the motherboard. Expansion boards (cards) plug into the bus. PCI is the most common expansion bus in a PC and other hardware platforms.
+
+            Southbridge,
+            Southbridge is a reference to a chipset on a PC motherboard. It is a group of microchips designed for a single function and manufactured as a single unit. This chipset controls or manages input and output (I/O). Examples of I/O interface connections controlled by southbridge are USB, serial, IDE and ISA.
+
+            AGP,
+            The Accelerated Graphics Port (AGP) was designed as a high-speed point-to-point channel for ... Intel introduced AGP support with the i440LX Slot 1 chipset on August 26, 1997, and a flood of products followed from all the major system board.
+
+            IDE Anschlusse,
+test.
+            CPU Socket,
+test.
+
+            "
+
+
+
+            android:textColorLink="@android:color/black"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/editText"
+            android:orientation="horizontal"
+            android:background="@drawable/taba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:id="@+id/bntlayout"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnSpeak"
+                    android:background="@drawable/playme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn1"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Play"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnStop"
+                    android:background="@drawable/stopme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn3"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Stop"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:textSize="30dp"
+
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Parts of Motherboard"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/kahatext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView2"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="PCI Slot"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/kahadef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/kahatext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="A Peripheral Component Interconnect (PCI) slot is a connecting apparatus for a 32-bit computer bus. "
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+        <!--CPU -->
+
+
+        <TextView
+            android:id="@+id/cputext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/kahadef"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="CPU(Central Processing Unit)"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/cpudef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cputext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Also known as the microprocessor or the processor, the CPU is the computer's brain. It is responsible for fetching, decoding, and executing program instructions as well as performing mathematical and logical calculations."
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+        <!--Cache Memory  -->
+
+
+        <TextView
+            android:id="@+id/cachetext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cpudef"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Cache Memory"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/cachedef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cachetext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Cache memory is a small block of high-speed memory (RAM) that enhances PC performance by pre-loading information from the (relatively slow) main memory and passing it to the processor on demand."
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+        <!--Expansion Bus-->
+
+
+        <TextView
+            android:id="@+id/ebtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cachedef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Expansion Bus"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/ebdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ebtext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="
+An expansion bus is an input/output pathway from the CPU to peripheral devices and it is typically made up of a series of slots on the motherboard. Expansion boards (cards) plug into the bus. PCI is the most common expansion bus in a PC and other hardware platforms."
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+        <!--Southbridge-->
+
+
+        <TextView
+            android:id="@+id/sbtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ebdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Southbridge"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/sbdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/sbtext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#000000"
+            android:text="Southbridge is a reference to a chipset on a PC motherboard. It is a group of microchips designed for a single function and manufactured as a single unit. This chipset controls or manages input and output (I/O). Examples of I/O interface connections controlled by southbridge are USB, serial, IDE and ISA."
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+        <!--AGP-->
+
+
+        <TextView
+            android:id="@+id/agtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/sbdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="AGP"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/agdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/agtext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="The Accelerated Graphics Port (AGP) was designed as a high-speed point-to-point channel for ... Intel introduced AGP support with the i440LX Slot 1 chipset on August 26, 1997, and a flood of products followed from all the major system board"
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+        <!--IDE Anschluss-->
+
+
+        <TextView
+            android:id="@+id/idetext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/agdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Chipsets"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/idedef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/idetext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="A chipset is a group of small circuits that coordinate the flow of data to and from a PC's key components. These key components include the CPU itself, the main memory, the secondary cache, and any devices situated on the buses. A chipset also controls data flow to and from hard disks and other devices connected to the IDE channels."
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+
+        <!--CPU Socket-->
+
+
+        <TextView
+            android:id="@+id/soctext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/idedef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="CPU Clock"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/socdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/soctext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="The CPU clock synchronizes the operation of all parts of the PC and provides the basic timing signal for the CPU. Using a quartz crystal, the CPU clock breathes life into the microprocessor by feeding it a constant flow of pulses."
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+        <TextView
+            android:id="@+id/diptext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/socdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="DIP (Dual In-line Package) "
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/dipdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/diptext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="switches are small electronic switches found on the circuit board that can be turned on or off just like a normal switch. They are very small and so are usually flipped with a pointed object, such as the tip of a screwdriver, a bent paper clip, or a pen top. Take care when cleaning near DIP switches, as some solvents may destroy them. Dip switches are obsolete and you will not find them in modern systems."
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+
+        <TextView
+            android:id="@+id/jumpertext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/dipdef"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Jumper pins  "
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/jumperdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/jumpertext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="are small protruding pins on the motherboard. A jumper cap or bridge is used to connect or short a pair of jumper pins. When the bridge is connected to any two pins, via a shorting link, it completes the circuit and a certain configuration has been achieved."
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/jumperdef"
+            >
+
+            <Button
+                android:id="@+id/quiz1"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/greenbutton"
+                android:text="I want to take a Quiz"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="25dp"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

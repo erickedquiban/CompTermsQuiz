@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:background="@drawable/compfrag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="638dp">
+
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            app:srcCompat="@drawable/programerlang"
+            />
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="201dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/imageView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="#008080"
+            android:enabled="false"
+            android:fadingEdge="horizontal|vertical"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:text="The Creator of Programming Language,
+
+            Python,Guido van Rossum,
+
+            Guido van Rossum (Dutch, born 31 January 1956) is a Dutch programmer best known as the author of the Python programming language, for which he was the Benevolent dictator for life (BDFL) until he stepped down from the position in July 2018.
+
+             Javascript, Brendan Eich,
+             Brendan Eich (born July 4, 1961) is an American technologist and creator of the JavaScript programming language. He co-founded the Mozilla project, the Mozilla Foundation and the Mozilla Corporation, and served as the Mozilla Corporation's chief technical officer and briefly, as its chief executive officer.
+
+             JAVA, James Arthur Gosling,
+             James Arthur Gosling, OC (born May 19, 1955) is a Canadian computer scientist, best known as the founder and lead designer behind the Java programming language
+
+             Swift,Chris Lattner,
+             Chris Lattner (born 1978) is an American software engineer best known as the main author of LLVM and related projects such as the Clang compiler and the Swift programming language. Swift creator Chris Lattner joins Google Brain after Tesla Autopilot stint techcrunch.com. Retrieved August 16, 2017.
+
+             Go,Robert Griesemer,
+             Robert Griesemer (June 9 1964) ist ein Schweizer Informatiker. Er war und ist massgeblich an der Entwicklung der Programmiersprache Gobeteiligt. Griesemer hat an der ETH Zürich studiert, wo er bei Hanspeter Mössenböck und Niklaus Wirth zum Thema A programming language for vector computers promovierte. Griesemer arbeitet bei Google.
+
+             C#, Anders Hejlsberg,
+             Anders Hejlsberg is a prominent Danish software engineer who co-designed several popular and commercially successful programming languages and development tools. He was the original author of Turbo Pascal and the chief architect of Delphi.
+
+             C++,Bjarne Stroustrup,
+
+             Bjarne Stroustrup is a Danish computer scientist, most notable for the creation and development of the C++ programming language. He is a visiting professor at Columbia University, and works at Morgan Stanley as a Managing Director in New York.
+
+             Ruby,Yukihiro Matsumoto,
+             Yukihiro Matsumoto is a Japanese computer scientist and software programmer best known as the chief designer of the Ruby programming language and its reference implementation, Matz's Ruby Interpreter.
+
+
+
+            "
+
+
+
+            android:textColorLink="@android:color/black"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/editText"
+            android:orientation="horizontal"
+            android:background="@drawable/taba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:id="@+id/bntlayout"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnSpeak"
+                    android:background="@drawable/playme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn1"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Play"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/taba"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnStop"
+                    android:background="@drawable/stopme"
+
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idbtn3"
+                    android:layout_width="282dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/taba"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="btnClick1"
+                    android:text="Stop"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:textSize="30dp"
+
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="The Creator"
+            android:textColor="#000000" />
+        <!--TITLE-->
+
+        <TextView
+            android:id="@+id/kahatext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            android:text="Python \nGuido van Rossum"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <!--For image of case-->
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:layout_below="@+id/kahatext"
+            android:layout_marginTop="21dp"
+            app:srcCompat="@drawable/creatopython" />
+
+        <TextView
+            android:id="@+id/kahadef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imageView3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Guido van Rossum (Dutch: [ˈɣido vɑn ˈrɔsʏm, -səm]; born 31 January 1956) is a Dutch programmer best known as the author of the Python programming language, for which he was the Benevolent dictator for life (BDFL) until he stepped down from the position in July 2018."
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+
+
+
+
+
+
+
+        <!--Monitor-->
+        <TextView
+            android:id="@+id/monitortext"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/kahadef"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:textSize="25dp"
+            android:text="Javascript \nBrendan Eich"
+            android:maxLines="2"
+            android:textColor="#000000" />
+        <!--monitor image-->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/monitortext"
+            app:srcCompat="@drawable/creatorjavascript" />
+
+
+        <TextView
+            android:id="@+id/monitodef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Brendan Eich (/ˈaɪk/; born July 4, 1961) is an American technologist and creator of the JavaScript programming language. He co-founded the Mozilla project, the Mozilla Foundation and the Mozilla Corporation, and served as the Mozilla Corporation's chief technical officer and briefly, as its chief executive officer"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@+id/imageView4"/>
+
+
+
+
+
+
+
+
+        <!--keyboard-->
+        <TextView
+            android:id="@+id/keytext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/monitodef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="JAVA \nJames Arthur Gosling"
+            android:maxLines="2"
+            android:textColor="#000000" />
+        <!--image of keyboard-->
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/keytext"
+            app:srcCompat="@drawable/creatorjava" />
+
+
+        <TextView
+            android:id="@+id/keydef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:layout_below="@id/imageView5"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="James Arthur Gosling, OC (born May 19, 1955) is a Canadian computer scientist, best known as the founder and lead designer behind the Java programming language."
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+
+        <!--Mouse Title-->
+
+        <TextView
+            android:id="@+id/mousetext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/keydef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Swift \nChris Lattner"
+            android:maxLines="2"
+            android:textColor="#000000"/>
+
+
+        <!--mouse image-->
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/mousetext"
+            app:srcCompat="@drawable/creatorswift" />
+
+
+        <TextView
+            android:id="@+id/mousedef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Chris Lattner (born 1978) is an American software engineer best known as the main author of LLVM and related projects such as the Clang compiler and the Swift programming language. ... Swift creator Chris Lattner joins Google Brain after Tesla Autopilot stint techcrunch.com. Retrieved August 16, 2017."
+            android:layout_below="@id/imageView6"/>
+
+
+        <!--Motherboard-->
+        <TextView
+            android:id="@+id/mother"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mousedef"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Go \nRobert Griesemer "
+            android:maxLines="2"
+            android:textColor="#000000"/>
+        <!--mother board image-->
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/mother"
+            app:srcCompat="@drawable/creatorgo" />
+        <!--Mother Def-->
+        <TextView
+            android:id="@+id/motherdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Robert Griesemer ( June 9 1964) ist ein Schweizer Informatiker. Er war und ist massgeblich an der Entwicklung der Programmiersprache Gobeteiligt. Griesemer hat an der ETH Zürich studiert, wo er bei Hanspeter Mössenböck und Niklaus Wirth zum Thema A programming language for vector computers promovierte. Griesemer arbeitet bei Google."
+            android:layout_below="@id/imageView7"
+            android:textColor="#000000"/>
+
+
+        <!--RAM-->
+        <TextView
+            android:id="@+id/ram"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/motherdef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="C# \nAnders Hejlsberg "
+            android:maxLines="2"
+            android:textColor="#000000"/>
+        <!--ram image-->
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/ram"
+            app:srcCompat="@drawable/creatorcsharp" />
+
+
+        <TextView
+            android:id="@+id/ramdef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Anders Hejlsberg is a prominent Danish software engineer who co-designed several popular and commercially successful programming languages and development tools. He was the original author of Turbo Pascal and the chief architect of Delphi."
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView8"
+            android:textColor="#000000"
+            />
+
+        <!--Battery-->
+        <TextView
+            android:id="@+id/battery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ramdef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="C++ \nBjarne Stroustrup "
+            android:maxLines="2"
+            android:textColor="#000000"
+            />
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/battery"
+            app:srcCompat="@drawable/creaorcplusplus" />
+        <TextView
+            android:id="@+id/batef"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView13"
+            android:text="Bjarne Stroustrup is a Danish computer scientist, most notable for the creation and development of the C++ programming language. He is a visiting professor at Columbia University, and works at Morgan Stanley as a Managing Director in New York"
+            android:textColor="#000000"
+            />
+        <!--cmos image-->
+
+
+        <TextView
+            android:id="@+id/compavr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/batef"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:text="Ruby \nYukihiro Matsumoto "
+            android:maxLines="2"
+            android:textColor="#000000"/>
+        <!--image of AVR-->
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_below="@id/compavr"
+            app:srcCompat="@drawable/yukihiro" />
+        <TextView
+            android:id="@+id/avref"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/imageView10"
+            android:text="Yukihiro Matsumoto is a Japanese computer scientist and software programmer best known as the chief designer of the Ruby programming language and its reference implementation, Matz's Ruby Interpreter."
+            android:textColor="#000000"/>
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/avref"
+            >
+
+            <Button
+                android:id="@+id/quiz1"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/greenbutton"
+                android:text="I want to take a Quiz"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="25dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+

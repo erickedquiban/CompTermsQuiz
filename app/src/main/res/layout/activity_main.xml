@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/compfrag"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/taba"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="352dp"
+
+            android:layout_height="168dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/teamwork" />
+
+        <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="50dp">
+
+
+
+    <EditText
+            android:id="@+id/edittext_username"
+            android:layout_width="140dp"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:background="@drawable/taba"
+        android:drawableLeft="@drawable/compuser"
+
+            android:hint="Username"
+
+            android:textColor="#95000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="100dp">
+
+
+
+        <EditText
+            android:id="@+id/edittext_password"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:drawableLeft="@drawable/comppass"
+            android:background="@drawable/taba"
+           android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+
+            android:textColor="#95000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="122dp"
+            android:layout_height="79dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/greenbutton"
+            android:text="Enter"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/textview_register"
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:drawableRight="@drawable/creatan"
+            android:text="Dont have an Account?"
+            android:textStyle="bold" />
+
+
+
+
+        <!-- <TextView
+             android:id="@+id/reg"
+             android:layout_width="105dp"
+             android:layout_height="18dp"
+             android:text="Need Help?"
+             android:textColor="#000000" />-->
+    </LinearLayout>
+</ScrollView>
